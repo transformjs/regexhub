@@ -2,7 +2,7 @@ var hub = require('../');
 
 describe('email', function() {
     var regex = new RegExp('^' + hub.email + '$');
-    var valids = [
+    var valid = [
         'niceandsimple@example.com',
         'very.common@example.com',
         'a.little.lengthy.but.fine@dept.example.com',
@@ -13,7 +13,7 @@ describe('email', function() {
         '!#$%&\'*+-/=?^_`{}|~@example.org'
     ];
 
-    var invalids = [
+    var invalid = [
         'Abc.example.com',
         'Abc.@example.com',
         'Abc..123@example.com',
@@ -24,14 +24,14 @@ describe('email', function() {
     ];
 
     it('should recognize valid email addresses', function() {
-        valids.forEach(function(valid) {
-            regex.test(valid).should.be.true;
+        valid.forEach(function(email) {
+            regex.test(email).should.be.true;
         });
     });
 
     it('should recognize invalid email address', function() {
-        invalids.forEach(function(invalid) {
-            regex.test(invalid).should.be.false;
+        invalid.forEach(function(email) {
+            regex.test(email).should.be.false;
         });
     });
 });
