@@ -15,7 +15,6 @@
   "license": "MIT",
   "dependencies": {
     "debug": "*",
-    "index": "^0.4.0",
     "moder": "0.0.3"
   },
   "scripts": {
