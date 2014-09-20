@@ -21,7 +21,6 @@ module.exports = require('moder')(__dirname + '/lib', function(pattern) {
     var createGlobal = function() {
         return new RegExp(pattern, 'g');
     };
-    console.log(pattern);
 
     var chain = {
         toString: value(pattern),
