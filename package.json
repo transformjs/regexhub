@@ -2,7 +2,7 @@
   "name": "regexhub",
   "description": "It's time to stop writing the same pattern anymore",
   "repository": "transformjs/regexhub",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "keywords": [],
   "files": [
     "index.js",
