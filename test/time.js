@@ -1,7 +1,7 @@
 var hub = require('../');
 
 describe('time', function() {
-    var regex = new RegExp('^' + hub.time + '$');
+    var regex = hub.time.exact();
 
     var valid = [
         '12:01:45',

@@ -15,7 +15,7 @@
   "license": "MIT",
   "dependencies": {
     "debug": "*",
-    "moder": "0.0.3"
+    "moder": "*"
   },
   "scripts": {
     "test": "NODE_ENV=test mocha --harmony --require should --reporter spec",
