@@ -2,7 +2,7 @@
 var hub = require('../');
 
 describe('ipv4', function() {
-    var regex = new RegExp('^' + hub.ipv4 + '$');
+    var regex = hub.ipv4.exact();
 
     var valid = [
         '0.0.0.0',

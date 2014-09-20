@@ -1,7 +1,7 @@
 var hub = require('../');
 
 describe('domain', function() {
-    var regex = new RegExp('^' + hub.domain + '$');
+    var regex = hub.domain.exact();
 
     var valid = [
         'example.com',

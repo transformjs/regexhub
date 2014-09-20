@@ -2,7 +2,7 @@
 var hub = require('../');
 
 describe('ipv6', function() {
-    var regex = new RegExp('^' + hub.ipv6 + '$');
+    var regex = hub.ipv6.exact();
 
     var valid = [
         '1::',

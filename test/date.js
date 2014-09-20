@@ -1,7 +1,7 @@
 var hub = require('../');
 
 describe('date', function() {
-    var regex = new RegExp('^' + hub.date + '$');
+    var regex = hub.date.exact();
 
     var valid = [
         '2014-01-02',

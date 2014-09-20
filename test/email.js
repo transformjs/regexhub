@@ -1,7 +1,8 @@
 var hub = require('../');
 
 describe('email', function() {
-    var regex = new RegExp('^' + hub.email + '$');
+    var regex = hub.email.exact();
+
     var valid = [
         'niceandsimple@example.com',
         'very.common@example.com',
@@ -23,18 +24,13 @@ describe('email', function() {
         'this\\ still\\"not\\\\allowed@example.com'
     ];
 
-    it('should recognize valid email addresses', function() {
+    it('valid', function() {
         valid.forEach(function(email) {
-        try {
-
             regex.test(email).should.be.true;
-        }catch(e) {
-            console.log(email);
-        }
         });
     });
 
-    it('should recognize invalid email address', function() {
+    it('invalid', function() {
         invalid.forEach(function(email) {
             regex.test(email).should.be.false;
         });
