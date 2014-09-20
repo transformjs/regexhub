@@ -5,7 +5,8 @@
   "version": "0.1.0",
   "keywords": [],
   "files": [
-    "index.js"
+    "index.js",
+    "lib"
   ],
   "devDependencies": {
     "istanbul-harmony": "0",
