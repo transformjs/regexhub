@@ -16,6 +16,7 @@
   "license": "MIT",
   "dependencies": {
     "debug": "*",
+    "ip-regex": "1",
     "moder": "*"
   },
   "scripts": {
